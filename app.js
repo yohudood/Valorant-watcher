@@ -20,8 +20,8 @@ const streamersUrl = (process.env.streamersUrl || 'https://www.twitch.tv/directo
 const scrollDelay = (Number(process.env.scrollDelay) || 2000);
 const scrollTimes = (Number(process.env.scrollTimes) || 5);
 
-const minWatching = (Number(process.env.minWatching) || 15); // Minutes
-const maxWatching = (Number(process.env.maxWatching) || 30); //Minutes
+const minWatching = (Number(process.env.minWatching) || 60); // Minutes
+const maxWatching = (Number(process.env.maxWatching) || 120); //Minutes
 
 const streamerListRefresh = (Number(process.env.streamerListRefresh) || 1);
 const streamerListRefreshUnit = (process.env.streamerListRefreshUnit || 'hour'); //https://day.js.org/docs/en/manipulate/add
@@ -32,7 +32,7 @@ const proxyAuth = (process.env.proxyAuth || "");
 
 const browserScreenshot = (process.env.browserScreenshot || false);
 
-const browserClean = 1;
+const browserClean = 2;
 const browserCleanUnit = 'hour';
 
 var browserConfig = {
