@@ -20,7 +20,7 @@ const streamersUrl = (process.env.streamersUrl || 'https://www.twitch.tv/directo
 const scrollDelay = (Number(process.env.scrollDelay) || 2000);
 const scrollTimes = (Number(process.env.scrollTimes) || 5);
 
-const minWatching = (Number(process.env.minWatching) || 60); // Minutes
+const minWatching = (Number(process.env.minWatching) || 95); // Minutes
 const maxWatching = (Number(process.env.maxWatching) || 120); //Minutes
 
 const streamerListRefresh = (Number(process.env.streamerListRefresh) || 1);
